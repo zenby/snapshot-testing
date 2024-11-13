@@ -18,18 +18,7 @@ const MODES = {
   WIDGETS_PER_ROW_4_3MIN_WIDTH: '4-widgets-per-row-3min-width',
 };
 
-const urls = [
-  'https://client2.dcodev.com/portal/pages/1/reports/160020',
-  'https://client2.dcodev.com/portal/pages/1/reports/160037',
-  'https://client2.dcodev.com/portal/pages/1/reports/160372',
-  'https://client2.dcodev.com/portal/pages/1/reports/160374',
-  'https://client2.dcodev.com/portal/pages/1/reports/160436', // long
-  'https://client2.dcodev.com/portal/pages/1/reports/160468',
-  'https://client2.dcodev.com/portal/pages/1/reports/160527', // many columns
-  'https://client2.dcodev.com/portal/pages/1/reports/160527', // with empty spaces
-  // 'https://client2.dcodev.com/portal/pages/1/reports/158729',
-  // 'https://client2.dcodev.com/portal/pages/1/reports/158734',
-].sort();
+const urls = ['http://localhost:3000/portal/pages/1/reports/160020'].sort();
 
 (async () => {
   const browser = await chromium.launch();
